@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  background-image: url("/images/6774633-uhd_3840_2160_30fps 1.png");
+  background-image: url("/Pages/images/6774633-uhd_3840_2160_30fps\ 1.png");
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ span {
 
 /* Section5 Styling */
 .Section5 {
-  background-image: url("/images/Vector.png");
+  background-image: url("/Pages/images/Vector.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
