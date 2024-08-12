@@ -1,0 +1,705 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-image: url("/images/6774633-uhd_3840_2160_30fps 1.png");
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Font Styling */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Nav Styling */
+nav {
+  color: #fff0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: 45px;
+  border-radius: 4px;
+}
+
+nav ul {
+  font-size: 24px;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff0f0;
+  border: 1px solid #b56f6f;
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown li {
+  padding: 10px;
+  color: red;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffe6e6;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+nav button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+  background-color: #ff2626;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 100px;
+}
+
+nav button:hover {
+  color: #ff2626;
+  background-color: #ffe6e6;
+}
+
+/* Main Content Styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: calc(100vh - 80px);
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 65px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #ff2626;
+}
+
+.hero p {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.hero button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+.hero .btn1 {
+  background-color: #ff2626;
+  border: none;
+}
+
+.hero .btn1:hover {
+  color: #ff2626;
+  background-color: #ffe6e6;
+}
+
+.hero .btn2 {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.hero .btn2:hover {
+  color: #ff2626;
+  background-color: white;
+}
+
+.hero button:last-child {
+  margin-right: 0;
+}
+
+/* Career Page Styling */
+#Career {
+  width: 100%;
+  height: 200px;
+  padding-top: 150px;
+  padding-left: 400px;
+  gap: 50px;
+}
+
+.card {
+  max-width: 540px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  border-radius: 20px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.learn-more-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.learn-more-link:hover {
+  color: #0056b3;
+}
+
+.card img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Section3 Styling */
+.Section3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 600px;
+  padding: 20px;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+
+.img img {
+  width: 70%;
+  height: 50%;
+  margin-left: 120px;
+}
+
+.typo {
+  position: absolute;
+  top: 52%;
+  left: 48%;
+  transform: translate(-52%, -48%);
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  z-index: 20;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding-bottom: 100px;
+}
+
+.text p {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.text h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.text span {
+  color: #ff2626;
+}
+
+.Section3 button {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: #ff2626;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.Section3 button:hover {
+  color: #ff2626;
+  background-color: #ffe6e6;
+}
+
+/* Section4 Styling */
+#Section4 {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.color {
+  background-color: #ff2626;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.image {
+  height: 600px;
+  max-width: 1000px;
+  margin-left: 100px;
+}
+
+.default-text {
+  width: 60%;
+  color: white;
+  margin-left: 100px;
+}
+
+#Section4 span {
+  color: black;
+}
+
+.default-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.default-text p {
+  font-size: 24px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#Section4 button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#Section4 .logoo {
+  margin-right: 20px;
+}
+
+#Section4 button:hover {
+  color: #ff2626;
+  background-color: white;
+}
+
+/* Section5 Styling */
+.Section5 {
+  background-image: url("/images/Vector.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.Section5 h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-left, .features-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  flex: 1;
+  width: 200px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.feature img {
+  width: 30px;
+  border-radius: 10px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #777;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  background: #DBDBDB;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 5rem;
+}
+
+.image-container img {
+  max-width: 60%;
+  min-height: 200px;
+  border-radius: 10px;
+}
+
+.highlight {
+  color: #ff0055;
+}
+
+/* Section6 Styling */
+.Section6 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Section6 .section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 150px;
+}
+
+.Section6 .section img {
+  width: 100%;
+  display: block;
+  margin-bottom: 150px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #eaeaea;
+}
+
+h5 {
+  font-size: 1.125rem;
+  color: #d62828;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.nav-link:hover {
+  color: #d62828;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phone, .email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone p, .email p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .col-md-2, .footer .col-2, .footer .col-3 {
+  flex: 1;
+  margin-bottom: 20px;
+  min-width: 160px;
+}
+
+.footer .col-md-2:last-child {
+  margin-right: 0;
+}
+
+.list-unstyled {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.list-unstyled i {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.list-unstyled i:hover {
+  color: #d62828;
+}
+
+.footer .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+
+.footer .end p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  nav ul {
+    font-size: 20px;
+  }
+
+  nav button {
+    margin-right: 20px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero button {
+    margin-right: 15px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  #Career {
+    padding-left: 20px;
+    gap: 20px;
+  }
+
+  .Section3 {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+
+  .img img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .color {
+    flex-direction: column;
+  }
+
+  .image {
+    height: auto;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .default-text {
+    margin-left: 20px;
+  }
+
+  .Section5 .features-left, .Section5 .features-right {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  nav ul {
+    font-size: 18px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero button {
+    margin-right: 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .Section3 {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 25px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  .image {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .default-text {
+    margin-left: 10px;
+  }
+
+  .Section5 .features-left, .Section5 .features-right {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .highlight {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  .footer .end {
+    flex-direction: column;
+  }
+
+  .footer .end p {
+    font-size: 12px;
+  }
+}
